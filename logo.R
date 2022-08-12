@@ -1,4 +1,3 @@
-
 library("ggplot2")
 library("gridExtra")
 
@@ -47,4 +46,3 @@ p <- ggplot(data) +
   theme_AW() +
   scale_colour_manual(values = c("white", "orange"))
 p
-
