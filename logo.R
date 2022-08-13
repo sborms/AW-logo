@@ -18,10 +18,10 @@ theme_AW <- function(base_size = 12, base_family = "") {
       panel.border = element_blank(),  
       panel.grid.major = element_blank(),  
       panel.grid.minor = element_blank(),  
-      # Specify facetting options
+      # Specify faceting options
       strip.background = element_rect(fill = "grey30", color = "grey10"),  
       strip.text.x = element_text(size = base_size*0.8, color = "white"),  
-      strip.text.y = element_text(size = base_size*0.8, color = "white",angle = -90),  
+      strip.text.y = element_text(size = base_size*0.8, color = "white", angle = -90),  
       # Specify plot options
       plot.background = element_rect(color = "black", fill = "black"),  
       plot.margin = unit(rep(1, 4), "lines")
@@ -41,8 +41,10 @@ w2 <- 1:length(x) %in% 4501:5500
 data <- data.frame(x = x, y1 = y1, w1 = w1, y2 = y2, w2 = w2)
 
 p <- ggplot(data) +
-  geom_line(aes(x = x, y = y1, colour = (w1 == TRUE), group = 1), size = 2.3) + 
-  geom_line(aes(x = x, y = y2, colour = (w2 == TRUE), group = 1), size = 2.3) + 
+  geom_line(aes(x = x, y = y1, colour = (w1 == TRUE), group = 1), size = 1.5) + 
+  geom_line(aes(x = x, y = y2, colour = (w2 == TRUE), group = 1), size = 1.5) + 
   theme_AW() +
   scale_colour_manual(values = c("white", "orange"))
 p
+
+ggsave("AW.pdf", p, "pdf", width = 2200, height = 1700, units = "px")
