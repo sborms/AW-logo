@@ -47,4 +47,4 @@ p <- ggplot(data) +
   scale_colour_manual(values = c("white", "orange"))
 p
 
-ggsave("AW2.jpg", p, "jpg", width = 2200, height = 1700, units = "px")
+ggsave("AW.jpg", p, "jpg", width = 2200, height = 1700, units = "px")
