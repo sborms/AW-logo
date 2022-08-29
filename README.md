@@ -1,4 +1,4 @@
-### Before we became the Data Wanderers, we were called the Academic Wannabes...
+### Before we became the Data Wanderers, we were a bunch of Academic Wannabes
 
 We created a logo, based on the Arctic Monkeys AM album cover. Do You Wanna Know how it looks like? See and compare for yourself.
 
